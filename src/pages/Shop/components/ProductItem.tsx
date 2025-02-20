@@ -53,7 +53,7 @@ export default function ProductItem({product, hideAddToCart, setUserProducts, sh
                 <button type={"button"} className={"style-button purple"} onClick={addToCart}>Pridėti į krepšelį</button>
                 : null
             }
-            {showAmount ? <div className={"amount"}>Kiekis: {product.amount}</div> : null}
+            {showAmount && "amount" in product ? <div className={"amount"}>Kiekis: {product.amount}</div> : null}
             {showRemoveFromCart ?
                 <button
                     type={"button"} className={`remove`}

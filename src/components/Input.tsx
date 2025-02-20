@@ -1,12 +1,12 @@
 import React from "react";
 
 interface InputInterface {
-    type: "text";
+    type: "text" | "number";
     id: string;
     name: string;
     value: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-    error: boolean;
+    error?: boolean;
     className?: string;
 }
 export default function Input({type, id, name, value, onChange, error,className} : InputInterface) {

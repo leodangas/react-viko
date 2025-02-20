@@ -147,6 +147,29 @@
   max-height: 100%;
 }
 
+.page-guessGame .attempts, .page-guessGame .message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+.page-guessGame .attempts span, .page-guessGame .message span {
+  font-weight: bold;
+}
+.page-guessGame .message {
+  color: #ff9671;
+}
+.page-guessGame .message.correct {
+  color: #16C47F;
+}
+.page-guessGame .form {
+  max-width: 400px;
+  margin: 2em auto 0;
+}
+.page-guessGame .form__button {
+  margin-top: 20px;
+  width: 100%;
+}
+
 :root {
   --red: #F42121;
 }
