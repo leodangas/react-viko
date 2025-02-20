@@ -1,0 +1,14 @@
+.style-button.component-goBack {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 2em;
+  max-width: 300px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  .icon {
+    filter: brightness(0) invert(1);
+    max-width: 22px;
+  }
+}

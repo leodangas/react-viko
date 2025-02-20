@@ -1,0 +1,78 @@
+.page-taskList {
+  .empty {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .form {
+    max-width: 500px;
+    margin: auto 0;
+    text-align: center;
+    &__input {
+      margin-top: 10px;
+    }
+    &__button {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin-top: 30px;
+  }
+
+  .tasks {
+    border-right: 1px solid #ededed;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .status-button, .delete-button {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    background: none;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .task-item {
+    border: 1px solid #ededed;
+    margin-right: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    &:nth-of-type(1) {
+      margin-top: 0;
+    }
+    &__name {
+      font-weight: 500;
+      text-align: left;
+      flex-grow: 1;
+      margin-right: 10px;
+      color: #ff9671;
+      &.completed {
+        color: #16C47F;
+      }
+
+    }
+
+  }
+}

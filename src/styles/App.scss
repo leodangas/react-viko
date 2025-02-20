@@ -1,0 +1,108 @@
+@use 'components/card';
+@use 'components/goBack';
+@use 'components/errorMessage';
+@use 'components/input';
+@use 'pages/home';
+@use 'pages/todolist';
+
+:root {
+  --red: #F42121;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: "Roboto", serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.style-heading {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+
+.style-paragraph {
+  text-align: center;
+  font-size: 24px;
+  color: rgb(0,0, 0, 0.8);
+  margin-top: 1em;
+}
+
+.style-button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: black;
+  color: ghostwhite;
+  text-align: center;
+
+  &.purple {
+    background: #845ec2;
+    color: white;
+  }
+
+  &.pink {
+    background: #ff6f91;
+    color: white;
+  }
+
+  &.orange {
+    background: #ff9671;
+    color: white;
+  }
+}
+
+label {
+  color: black;
+  font-weight: 500;
+  line-height: 1.375;
+  margin-bottom: 8px;
+  font-size: 18px;
+  &.required {
+    &::after {
+      content: '*';
+      color: var(--red);
+      font-weight: 400;
+      margin-left: 4px;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    color: #fff9;
+    line-height: 1.4444;
+  }
+}
+
